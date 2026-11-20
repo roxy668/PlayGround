@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Rival Rumble</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div class="brand"><span>RIVAL</span><b>RUMBLE</b></div>
+  <div id="phaseBadge">BUILD PHASE</div>
+  <div id="actions"><button id="resetBtn" title="Reset tower">↻</button><button id="doneBtn">ATTACK! ▶</button></div>
+</div>
+<div id="buildTray">
+  <button class="blockChoice selected" data-type="wood"><div class="mini wood"></div><span>WOOD</span></button>
+  <button class="blockChoice" data-type="stone"><div class="mini stone"></div><span>STONE</span></button>
+  <button class="blockChoice" data-type="glass"><div class="mini glass"></div><span>GLASS</div></span></button>
+  <button class="blockChoice" data-type="bomb"><div class="mini bomb">●</div><span>BOMB</span></button>
+  <button id="deleteBtn" class="blockChoice"><div class="mini erase">⌫</div><span>ERASE</span></button>
+</div>
+<div id="gameOver">
+  <div class="panel"><div id="resultTitle">VICTORY!</div><div id="resultScore">Tower destroyed</div><button id="againBtn">PLAY AGAIN</button></div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
